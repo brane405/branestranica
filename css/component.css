@@ -209,7 +209,7 @@
 
 .demo-4 .box svg line.top,
 .demo-4 .box svg line.bottom {
-	stroke-dasharray: 300; 
+	stroke-dasharray: 200; 
 }
 
 .demo-4 .box svg line.left,
