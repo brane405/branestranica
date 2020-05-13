@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Latinac's Page</title>
+        <!-- fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+        <!-- css     -->
+        <link rel="stylesheet" type="text/css" href='style.css'>
+    </head>
+    <body onload="myFunction()">
+        <div id="myDiv">
+            <div class="boxes">
+                <div onclick="aboutUsShow()" class="aboutUs box">
+                    <p class="bigLetter">A</p>
+                    <p class="smallLetter">About Us</p>
+                </div>
+                <div onclick="galleryShow()" class="gallery box">
+                    <p class="bigLetter">G</p>
+                    <p class="smallLetter">Gallery</p>
+                </div>
+                <div onclick="triljShow()" class="trilj box">
+                    <p class="bigLetter">T</p>
+                    <p class="smallLetter">Trilj</p>
+                </div>
+            </div>
+            <div class="containers">
+                <div id="aboutUs-container" class="aboutUs-container container">
+                    <div onclick="hideContainers()" class="crossMajor">
+                        <div class="cross">
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <line x1="1.13663" y1="1.13168" x2="11.1366" y2="11.1317" stroke="#FCE2E4"/>
+                                <line y1="-0.5" x2="14.1421" y2="-0.5" transform="matrix(0.707107 -0.707107 -0.707107 -0.707107 0.783081 10.4852)" stroke="#FCE2E4"/>
+                            </svg>                            
+                        </div>																	
+                    </div>
+                    <div class="aboutUs-body">
+                        <p>The Latina Family House offers you a break for body and soul. Escape to your well-deserved vacation and relax through the variety of activities they have provided. And at the end of the day, sweeten your palate with the traditional cuisine of Dalmatian Zagora.</p>
+                        <img onclick="zoomPic(this)" width="600px" src="/photos/1.jpg" alt="">
+                        <p>Rooms "Latina" (Ante Latinac) are just 300 meters from the Cetina River in Trilj. The property is situated 300 meters from the city center, 1 km from Roman-era Tilurium Military Camp and 5 km from the remains of the 14th-century Nutjak Fort. The town of Sinj and the Museum of the Sinjska Alka are 13 km away, and the city of Split is located 35 km from Trilj. Popular beaches in Brela are about 55 km away.</p>
+                        <video width="520px" controls> 
+                            <source src="/photos/1.mp4" type="video/mp4">
+                        </video>
+                        <p>Owners can organize hiking, trout fishing, rafting and horseback riding in the immediate vicinity (approx. 1km.) </p>
+                        <div >
+                            <img onclick="zoomPic(this)" style="border-radius: 5%;" width="500px" src="/photos/34.JPG" alt="">
+                            <img onclick="zoomPic(this)" style="border-radius: 5%;" width='500px' src="/photos/35.JPG" alt="">
+                        </div>							
+                        <p> There are three double rooms and one room with three beds. All rooms have a bathroom (shower and toilet), air conditioning, free Wi-Fi, satellite TV and a baby cot (if needed). Guests are offered breakfast and dinner based of home-made meals.</p>
+                        <div >
+                            <img onclick="zoomPic(this)"  style="border-radius: 5%;" width="500px" src="/photos/22.jpeg" alt="">
+                            <img onclick="zoomPic(this)" style="border-radius: 5%;" width="500px" src="/photos/23.jpeg" alt="">
+                        </div>
+                        <h2>Traditional Dalmatian food	</h2>
+                        <p   style="font-weight: 100;">Try traditional  local food from home smoked meat, to the fresh fish and homemade wine. You can find all delicious food and drinks, and we are gonna be more than happy to prepare anything for you.</p    >
+                        <img width="1000px" src="/photos/36.png" alt="">
+                    </div>							
+                </div>
+                <div id="gallery-container" class="gallery-container container">
+                        <div class="crossMajor" onclick="hideContainers()" >
+                            <div class="cross">
+                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <line x1="1.13663" y1="1.13168" x2="11.1366" y2="11.1317" stroke="#FCE2E4"/>
+                                    <line y1="-0.5" x2="14.1421" y2="-0.5" transform="matrix(0.707107 -0.707107 -0.707107 -0.707107 0.783081 10.4852)" stroke="#FCE2E4"/>
+                                </svg>                            
+                            </div>																	
+                        </div>        
+                </div>
+                <div id="trilj-container" class="trilj-container container">
+                        <div onclick="hideContainers()" class="crossMajor">
+                            <div class="cross">
+                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <line x1="1.13663" y1="1.13168" x2="11.1366" y2="11.1317" stroke="#FCE2E4"/>
+                                    <line y1="-0.5" x2="14.1421" y2="-0.5" transform="matrix(0.707107 -0.707107 -0.707107 -0.707107 0.783081 10.4852)" stroke="#FCE2E4"/>
+                                </svg>                            
+                            </div>																	
+                        </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi exercitationem nam iusto laudantium adipisci deleniti ratione quam, inventore ducimus molestias aut omnis! At officiis harum ipsam doloremque omnis placeat ex.</p>
+                </div>
+            </div>
+            <div id="cookies" class="cookies">
+                    <h1>Do you accept cookies??</h1>
+                    <p onclick="hideCookies()">Of course</p>
+                    <p onclick="alertOnCookies()">Not even in the wildest dream</p>
+            </div>
+            <div class="navbar">
+                <div onclick="toggleNavbarRight()" class="hamburger">
+                    <svg width="25" height="15" viewBox="0 0 25 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <line class="" id="line1" y1="1.5" x2="25" y2="1.5" stroke="white" stroke-width="3"/>
+                        <line class="" id="line2" y1="7.5" x2="25" y2="7.5" stroke="white" stroke-width="3"/>
+                        <line class="line3" id="line3" y1="13.5" x2="25" y2="13.5" stroke="white" stroke-width="3"/>
+                    </svg>
+                </div>
+                <div class="logo">Latina</div>
+                <div id="navbarRight" class="navbarRight">
+                    <div onclick="showContact()" class="contactButton">
+                        Contact us
+                    </div>
+                    <div onclick="showAdventures()" class="adventures">
+                        Adventures
+                    </div>
+                    <div class="languages">
+                        <a href="/cro/indexcro.html"><img width="30px" src="/photos/hr.png" alt="Croatian"></a>
+                        <a href="/index.html"><img width="30px" src="/photos/eng.png" alt="English"></a>
+                        <a href="/fr/indexfr.html"><img width="30px" src="/photos/fra.png" alt="French"></a>	
+                    </div>
+                </div>
+            </div>  
+            <div class="topFunctionButton">
+                <button onclick="topFunction()" id="myBtn" title="Go to top">
+                    <svg width="30" height="30" viewBox="0 0 174 123" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <line x1="13.8837" y1="119.866" x2="81.8837" y2="8.86572" stroke="black" stroke-width="12"/>
+                        <line x1="92.0338" y1="8.73485" x2="164.034" y2="119.735" stroke="black" stroke-width="12"/>
+                        <line y1="6" x2="174" y2="6" stroke="black" stroke-width="12"/>
+                    </svg>	
+                </button>
+            </div>
+            <div id="contact-container" class="contact-container">
+                <p>Contact-container</p>
+            </div>
+            <div id="adventures-container" class="adventures-container">
+                <p>Adventures-container</p>
+            </div>
+        </div>
+        <div id="loader">
+            <div id="insideLoader"></div>
+            <h1 id="loaderText" style="display: none;">Loading</h1>				
+        </div>
+        <script src="newapp.js"></script>
+    </body>
+</html>

@@ -17,7 +17,7 @@
 		<link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300&display=swap" rel="stylesheet">
 		
 	</head>
-	<body onload="myFunction(), clickInfo()" id='body' class='lightMode'>
+	<body onload="myFunction()" id='body' class='lightMode'>
 		<div class="container">
 			<header class="codrops-header"></header>
 			<div id="myDiv" style="display: none;" class="animate-bottom">
@@ -82,7 +82,7 @@
 					<section class="noBackground" id="background" >
 						<div id='cross' onclick="displayUnBlock()" >
 							<div class="cross">
-								<svg class="svgcross" width="63" height="64" viewBox="0 0 63 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<svg class="svgcross" width="25" height="25" viewBox="0 0 63 64" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<line x1="62.3536" y1="1.35355" x2="0.353552" y2="63.3536" stroke="green"/>
 								<line y1="-0.5" x2="87.6812" y2="-0.5" transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 62 63)" stroke="green"/>
 							</svg>
@@ -116,7 +116,7 @@
 					<section class="noBackground2 photos" id="background2" >
 						<div id='cross2'>
 							<div class="cross2"  onclick="displayUnBlock2()">								
-									<svg class="svgcross" width="63" height="64" viewBox="0 0 63 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<svg class="svgcross" width="25" height="25" viewBox="0 0 63 64" fill="none" xmlns="http://www.w3.org/2000/svg">
 										<line x1="62.3536" y1="1.35355" x2="0.353552" y2="63.3536" stroke="white"/>
 										<line y1="-0.5" x2="87.6812" y2="-0.5" transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 62 63)" stroke="white"/>
 									</svg>
@@ -159,15 +159,15 @@
 					<section class="noBackground3" id="background3" >
 						<div id='cross' onclick="displayUnBlock3()">
 							<div class="cross" >
-								<svg class="svgcross"  width="63" height="64" viewBox="0 0 63 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<svg class="svgcross"  width="25" height="25" viewBox="0 0 63 64" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<line x1="62.3536" y1="1.35355" x2="0.353552" y2="63.3536" stroke="green"/>
 								<line y1="-0.5" x2="87.6812" y2="-0.5" transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 62 63)" stroke="green"/>
 								</svg>
 							</div>
-							<div>
-								<p>Trilj (in Roman times Tilurium) is a town in Croatia, located in the Split-Dalmatia County. The position on the communication route between the coast and the interior of Dalmatia, at the place of the most favorable crossing over the river Cetina just before its canyon bed, determined the role of Trilj in the past, determines it today, and will certainly be so in the future. Numerous archeological finds have been preserved in the area of ​​the town of Trilj, which testify to the continuity of life since the earliest prehistoric times. The first ethnically known inhabitants of this area were the Illyrian Delmatians. They lived in hillfort settlements whose positions followed the communication direction that connected their center Delminium with the Adriatic coast. One hundred and fifty years of fierce fighting with the Romans (156 BC - 9) ended in the final defeat of the Delmats a few years after the birth of Christ.</p>
-								<p>After that, the Romans built a representative military camp Tilurium on Gardun above today's Trilj for their VII. a legion that will be named Claudia pia fidelis due to its loyalty to the emperor. From this strategic position, the legionaries easily controlled the crossing over the river Cetina (ant. Hippus), and a settlement developed along the bridge belonging to Tilurium, the name of which clearly testifies to this affiliation: Pons Tiluri (Ponteluri, Pons Ciluri) - whose Croatian form will become Trilj . The Romans bring their economic and cultural achievements. A system of roads from Salona to the interior of the Province of Dalmatia is being built.</p>	
-							</div>
+						</div>
+						<div class="trilj-container">
+							<p>Trilj (in Roman times Tilurium) is a town in Croatia, located in the Split-Dalmatia County. The position on the communication route between the coast and the interior of Dalmatia, at the place of the most favorable crossing over the river Cetina just before its canyon bed, determined the role of Trilj in the past, determines it today, and will certainly be so in the future. Numerous archeological finds have been preserved in the area of ​​the town of Trilj, which testify to the continuity of life since the earliest prehistoric times. The first ethnically known inhabitants of this area were the Illyrian Delmatians. They lived in hillfort settlements whose positions followed the communication direction that connected their center Delminium with the Adriatic coast. One hundred and fifty years of fierce fighting with the Romans (156 BC - 9) ended in the final defeat of the Delmats a few years after the birth of Christ.</p>
+							<p>After that, the Romans built a representative military camp Tilurium on Gardun above today's Trilj for their VII. a legion that will be named Claudia pia fidelis due to its loyalty to the emperor. From this strategic position, the legionaries easily controlled the crossing over the river Cetina (ant. Hippus), and a settlement developed along the bridge belonging to Tilurium, the name of which clearly testifies to this affiliation: Pons Tiluri (Ponteluri, Pons Ciluri) - whose Croatian form will become Trilj . The Romans bring their economic and cultural achievements. A system of roads from Salona to the interior of the Province of Dalmatia is being built.</p>	
 						</div>
 					</section>
 					<div id="contact-container" class="contact">
@@ -247,7 +247,7 @@
 				<div id="insideLoader"></div>
 				<h1 id="loaderText" style="display: none;">Loading</h1>				
 			</div>
-			<div">
+			<div>
 				<button onclick="topFunction()" id="myBtn" title="Go to top">
 					<svg width="30" height="30" viewBox="0 0 174 123" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<line x1="13.8837" y1="119.866" x2="81.8837" y2="8.86572" stroke="black" stroke-width="12"/>
